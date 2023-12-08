@@ -4,7 +4,7 @@ export const Header = () => {
       <div className="flex py-8 items-center justify-between border-black border-b">
         <img src="/Logo.png" className="h-9"></img>
 
-        <div className="flex gap-4 text-gray-400">
+        <div className="flex gap-10 text-gray-400">
           <p>Home</p>
           <p>Blog</p>
           <p>Contact</p>

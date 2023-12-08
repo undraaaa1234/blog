@@ -32,7 +32,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between items-center border-t border-gray-300 py-8">
+        <div className="flex justify-between items-center border-t py-8">
           <div className="flex gap-3">
             <img src="B.png" className="h-12"></img>
 

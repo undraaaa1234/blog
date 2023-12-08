@@ -1,6 +1,6 @@
 export const Carousel = () => {
   return (
-    <div className="flex flex-col gap-2 py-8">
+    <div className="flex flex-col gap-2 py-8 border-b border-black">
       <div className="relative">
         <img src="ania.png"></img>
 
