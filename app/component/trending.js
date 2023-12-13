@@ -21,20 +21,28 @@ export const Trending = () => {
     return (
       <div>
         <div className="w-full flex flex-col gap-4 py-8 border-b border-black">
-          <header className="font-bold">Trending</header>
-          <div className="flex gap-4">
+          <header className="font-bold text-xl">Trending</header>
+          <div className="flex gap-4 ">
             {data.map((item, index) => (
-              <div key={index} className="w-1/4 relative h-[400px]">
+              <div
+                key={index}
+                className="w-1/4 relative h-[400px] overflow-hidden rounded-2xl"
+              >
                 <img
                   src={item.social_image}
                   className="rounded-2xl h-[100%]"
                 ></img>
 
-                <div className="flex flex-col gap-4 absolute bottom-2 left-2">
-                  <h1 className="bg-blue-500 text-white w-fit py-1 px-3 rounded-xl">
-                    {item.title}
-                  </h1>
-                  <p className="font-bold text-white">{item.description}</p>
+                <div
+                  className="h-full w-full absolute top-0"
+                  style={{ backgroundColor: "rgb(0,0,0,0.5)" }}
+                >
+                  <div className="flex flex-col gap-4 absolute bottom-2 left-2">
+                    <h1 className="bg-blue-500 text-white w-fit py-1 px-3 rounded-xl">
+                      {item.title}
+                    </h1>
+                    <p className="font-bold text-white">{item.description}</p>
+                  </div>
                 </div>
               </div>
             ))}

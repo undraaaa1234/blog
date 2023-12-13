@@ -1,5 +1,5 @@
+import { Blog } from "./component/blog";
 import { Carousel } from "./component/carousel";
-import { Posts } from "./component/posts";
 import { Trending } from "./component/trending";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <div className="w-full">
       <Carousel />
       <Trending />
-      <Posts />
+      <Blog />
     </div>
   );
 }

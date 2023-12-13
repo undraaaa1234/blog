@@ -4,7 +4,7 @@ export const Footer = () => {
       <div className="w-full text-gray-400 py-8 flex flex-col gap-6 border-black border-t">
         <div className="flex justify-between">
           <div className="flex flex-col gap-4">
-            <h1 className="font-bold text-black">About</h1>
+            <h1 className="font-bold text-black text-xl">About</h1>
 
             <p className="w-[250px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
