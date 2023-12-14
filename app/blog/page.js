@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 export default function BlogPage() {
   function Profile() {
@@ -67,19 +68,23 @@ export default function BlogPage() {
 
           <div className="grid grid-cols-3 gap-6 ">
             {data.map((item, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 w-fit rounded-xl p-4"
-              >
-                <img src={item.social_image} className="h-[300px]"></img>
-                <div className="p-4 flex flex-col gap-4">
-                  <h1 className="bg-blue-500 text-white w-fit py-1 px-3 rounded-xl">
-                    {item.title}
-                  </h1>
-                  <p className="font-bold w-[250px]">{item.description}</p>
-                  <p className="text-gray-300">{item.readable_publish_date}</p>
+              <Link href={`/blog/${item.id}`}>
+                <div
+                  key={index}
+                  className="border border-gray-200 w-fit rounded-xl p-4"
+                >
+                  <img src={item.social_image} className="h-[300px]"></img>
+                  <div className="p-4 flex flex-col gap-4">
+                    <h1 className="bg-blue-500 text-white w-fit py-1 px-3 rounded-xl">
+                      {item.title}
+                    </h1>
+                    <p className="font-bold w-[250px]">{item.description}</p>
+                    <p className="text-gray-300">
+                      {item.readable_publish_date}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 

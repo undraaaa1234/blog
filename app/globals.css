@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.medeelel h2 {
+  font-size: 36px;
+  margin: 20px 0px;
+}
+.medeelel p {
+  margin: 20px 0px;
+}
+.medeelel img {
+  border-radius: 30px;
+  margin: auto;
+}
